@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+.inter{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+body{
+  font-family: Inter;
+  {/*background: linear-gradient(135deg, #0000, #DDD6FE);*/}
+}
+
+.hero{
+  filter: brightness(30%);
+}
