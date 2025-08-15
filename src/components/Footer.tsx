@@ -7,7 +7,11 @@ export default function Footer() {
         
         {/* Sección 1: Sobre el evento */}
         <div>
+<<<<<<< HEAD
           <h3 className="text-xl font-semibold mb-3">Conferencia Mónica Bustamante, Diana Escobar y Fernanda Caicedo</h3>
+=======
+          <h3 className="text-xl font-semibold mb-3">Conferencia Mónica Bustamante, Diana Escobar y Fernanda</h3>
+>>>>>>> 0ce13c26770d29d5cb18c36b7382c0f2fcd30938
           <p className="text-sm text-gray-300 leading-relaxed">
             Un espacio para reconectar contigo misma, despertar tu poder interior y liderar tu vida y tu negocio con amor propio, estrategias de marketing y ventas auténticas.
           </p>
@@ -27,14 +31,22 @@ export default function Footer() {
             </li>
             <li className="flex items-center gap-2">
               <RiWhatsappFill className="text-yellow-300" />
+<<<<<<< HEAD
               +57 3245145642
+=======
+              +57 300000000
+>>>>>>> 0ce13c26770d29d5cb18c36b7382c0f2fcd30938
             </li>
           </ul>
         </div>
 
         {/* Sección 3: Redes sociales */}
         <div>
+<<<<<<< HEAD
           <h4 className="text-lg font-semibold mb-3">Síguenos</h4>
+=======
+          <h4 className="text-lg font-semibold mb-3">Sígueme</h4>
+>>>>>>> 0ce13c26770d29d5cb18c36b7382c0f2fcd30938
           <div className="flex gap-4">
             <a
               href="https://www.instagram.com/monica_bustamante_coach"
@@ -45,6 +57,7 @@ export default function Footer() {
               <RiInstagramFill className="text-2xl" />
             </a>
             <a
+<<<<<<< HEAD
               href="https://www.instagram.com/diana.fernanda2/?igsh=MW8weG83dnUwNm84NA%3D%3D&utm_source=qr#"
               target="_blank"
               rel="noopener noreferrer"
@@ -53,6 +66,8 @@ export default function Footer() {
               <RiInstagramFill className="text-2xl" />
             </a>
             <a
+=======
+>>>>>>> 0ce13c26770d29d5cb18c36b7382c0f2fcd30938
               href="https://api.whatsapp.com/message/P7QXQVX4IAQGO1?autoload=1&app_absent=0"
               target="_blank"
               rel="noopener noreferrer"
@@ -66,7 +81,11 @@ export default function Footer() {
 
       {/* Línea inferior */}
       <div className="bg-purple-800 text-center py-4 text-sm text-gray-300">
+<<<<<<< HEAD
         © {new Date().getFullYear()} Conferencia Mónica Bustamante, Diana Escobar y Fernanda Caicedo — Todos los derechos reservados.
+=======
+        © {new Date().getFullYear()} Conferencia Mónica Bustamante, Diana Escobar y Fernanda — Todos los derechos reservados.
+>>>>>>> 0ce13c26770d29d5cb18c36b7382c0f2fcd30938
       </div>
     </footer>
   );

@@ -14,6 +14,7 @@ const host = [
     },
     {
     hostName: "Diana Escobar",
+<<<<<<< HEAD
     hostText: "Experta en Ventas y Atención al Cliente Con más de 12 años de experiencia en el mundo comercial, ayudo a equipos y negocios a vender más y vender mejor, aplicando técnicas de cierre efectivas y estrategias de fidelización de clientes. He capacitado a decenas de profesionales para que conviertan cada interacción en una oportunidad de negocio, logrando incrementos sostenidos en ventas y una conexión auténtica con sus clientes. Mi enfoque combina habilidades prácticas, mentalidad ganadora y un método probado para llevar tus resultados al siguiente nivel.",
     hostSlogan: "Vender no es convencer, es conectar y generar confianza.",
     hostIgUrl: "https://www.instagram.com/diana.fernanda2/?igsh=MW8weG83dnUwNm84NA%3D%3D&utm_source=qr#",
@@ -26,6 +27,18 @@ const host = [
     hostSlogan: "No apuesto a la suerte, apuesto a la estrategia que convierte sueños en resultados.",
     hostIgUrl: "https://www.instagram.com/diana.fernanda2/?igsh=MW8weG83dnUwNm84NA%3D%3D&utm_source=qr#",
     hostIgTitle: "@diana.fernanda2",
+=======
+    hostText: "Coach, conferencista y mujer real. He acompañado a miles de mujeres, hombres, deportistas y empresarios a recordar quiénes son, a reconectarse con su poder interior y a liderar sus vidas desde el amor propio. Reconocimientos: 2 Guinness World Records, Experta en neurociencia y gerencia estratégica, Fundadora de programas de transformación emocional y mentalidad",
+    hostIgUrl: "https://www.instagram.com/monica_bustamante_coach?igsh=cGxpbGQ2YzU3cGo4",
+    hostIgTitle: "@monica_bustamante_coach",
+    hostImg: hostimg3
+    },
+    {
+    hostName: "Fernanda",
+    hostText: "Coach, conferencista y mujer real. He acompañado a miles de mujeres, hombres, deportistas y empresarios a recordar quiénes son, a reconectarse con su poder interior y a liderar sus vidas desde el amor propio. Reconocimientos: 2 Guinness World Records, Experta en neurociencia y gerencia estratégica, Fundadora de programas de transformación emocional y mentalidad",
+    hostIgUrl: "https://www.instagram.com/monica_bustamante_coach?igsh=cGxpbGQ2YzU3cGo4",
+    hostIgTitle: "@monica_bustamante_coach",
+>>>>>>> 0ce13c26770d29d5cb18c36b7382c0f2fcd30938
     hostImg: hostimg2
     },
     
