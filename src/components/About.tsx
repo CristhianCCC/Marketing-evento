@@ -8,15 +8,16 @@ import about1 from "../img/about1.png";
 export default function About () {
     return (
         <>
+        <section id ="about">
             <h2 className="text-4xl font-bold text-center py-5 hover:text-5xl duration-300 ease-in-out text-purple-900">¿Qué encontrarás en este evento?</h2>
-            
             <div className="grid lg:grid-cols-2 gap-2 items-center px-4 lg:px-20 xl:px-60">
                 <div>
                     <p className="text-lg lg:text-xl leading-relaxed text-center lg:text-left">
-                        "Una mente en paz y un corazón conectado son más fuertes que cualquier estrategia de negocios.”
-                        Esta conferencia no solo te inspirará: te moverá.
+                        "Una mente en paz y un corazón conectado son más fuertes que cualquier estrategia de negocios… pero cuando se combinan con marketing y ventas conscientes, el impacto es imparable."
+                        Esta conferencia no solo te inspirará: te moverá a la acción.
                         Es un espacio para soltar la autoexigencia, el autosabotaje y la mentalidad de carencia que muchas mujeres arrastran mientras intentan construir algo afuera.
-                        Aquí vas a reconectarte contigo misma, con tu valor, tu propósito y tu capacidad de liderar tu vida personal y empresarial desde un lugar mucho más auténtico: el amor propio.
+                        Aquí vas a reconectarte contigo misma, con tu valor, tu propósito y tu capacidad de liderar tu vida personal y empresarial desde un lugar auténtico: el amor propio.
+                        Y además, descubrirás cómo convertir tu mensaje en una marca poderosa, cómo comunicarlo con impacto y cómo potenciar tus ventas desde la conexión y no desde la presión.
                     </p>
                 </div>
                 <div className="flex justify-center">
@@ -43,6 +44,7 @@ export default function About () {
                     </div>
                 </div>
             </div>
+        </section>
         </>
     )
 }

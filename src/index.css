@@ -12,6 +12,11 @@ body{
   {/*background: linear-gradient(135deg, #0000, #DDD6FE);*/}
 }
 
+
+html{
+    scroll-behavior: smooth;
+}
+
 .hero{
   filter: brightness(30%);
 }
