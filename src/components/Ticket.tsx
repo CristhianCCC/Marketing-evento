@@ -2,14 +2,14 @@ import { RiWhatsappFill } from "react-icons/ri";
 
 export default function Ticket() {
   return (
-    <section id="tickets" className="py-12 px-4 bg-gray-50">
+    <section id="tickets" className="py-12 px-4">
       {/* Título */}
-      <h2 className="text-3xl sm:text-4xl font-bold text-center text-purple-900 hover:text-5xl duration-300 ease-in-out">
+      <h2 className="text-3xl sm:text-4xl font-bold text-center gradient-gold hover:text-5xl duration-300 ease-in-out">
         Tú no estás aquí por suerte. Estás aquí porque estás lista.
       </h2>
 
       {/* Descripción */}
-      <p className="text-lg sm:text-xl text-center max-w-3xl mx-auto mt-6 text-gray-700">
+      <p className="text-lg sm:text-xl text-center max-w-3xl mx-auto mt-6 text-white">
         El mayor acto de amor propio… es tomar decisiones alineadas contigo.
         Esta no es solo una conferencia. Es una inversión emocional y personal
         para ti, tu vida y tu negocio.
@@ -17,9 +17,9 @@ export default function Ticket() {
 
       {/* Información de ticket */}
       <div className="mt-10 text-center">
-        <h3 className="text-2xl font-semibold">Reserva ya tu entrada.</h3>
-        <p className="text-lg text-gray-600">
-          $80.000 <span className="text-sm">(Preventa hasta el 31 de julio)</span>
+        <h3 className="text-2xl gradient-pink font-bold">Reserva ya tu entrada.</h3>
+        <p className="text-xl gradient-gold font-bold">
+          $60.000 <span className="text-xl gradient-pink">(Preventa hasta el 5 de septiembre)</span>
         </p>
       </div>
 
@@ -27,7 +27,7 @@ export default function Ticket() {
       <div className="mt-8 flex flex-col items-center gap-4">
         <div className="flex items-center gap-2 text-lg text-gray-700">
           <RiWhatsappFill className="text-emerald-600 text-2xl" />
-          <span>Te espero en WhatsApp</span>
+          <span className="text-white font-bold">Te esperamos en WhatsApp</span>
         </div>
 
         <a

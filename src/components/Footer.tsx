@@ -2,7 +2,7 @@ import { RiInstagramFill, RiWhatsappFill, RiMailFill, RiMapPin2Fill } from "reac
 
 export default function Footer() {
   return (
-    <footer className="bg-purple-900 text-white">
+    <footer className="pink text-white">
       <div className="max-w-7xl mx-auto px-6 py-10 grid gap-8 md:grid-cols-3">
         
         {/* Sección 1: Sobre el evento */}
@@ -68,7 +68,7 @@ export default function Footer() {
       </div>
 
       {/* Línea inferior */}
-      <div className="bg-purple-800 text-center py-4 text-sm text-gray-300">
+      <div className="bg-pink text-center py-4 text-sm text-gray-300">
         © {new Date().getFullYear()} - 2025 Conferencia Mónica Bustamante, Diana Escobar y Fernanda Caicedo — Todos los derechos reservados.
       </div>
     </footer>

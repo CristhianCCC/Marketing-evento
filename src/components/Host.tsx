@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useSwipeable } from "react-swipeable";
 import hostimg1 from "../img/host.jpg";
 import hostimg2 from "../img/host2.jpg";
 import hostimg3 from "../img/host3.jpg";
@@ -38,11 +39,19 @@ export default function Host () {
     const prev = () => setCurrent((current - 1 + host.length) % host.length);
     const next = () => setCurrent((current + 1) % host.length);
 
+    // Configuración para swipe
+    const handlers = useSwipeable({
+    onSwipedLeft: () => next(),
+    onSwipedRight: () => prev(),
+    preventScrollOnSwipe: true,
+    trackTouch: true,
+    });
+
     return (
         <>
         <section id = "host">
-            <div className="relative lg:mx-20">
-                    <h2 className="text-4xl font-bold text-center py-2 text-purple-900 hover:text-5xl duration-300 ease-in-out pt-10">Nuestras Host: {host[current].hostName}</h2>
+            <div {...handlers} className="relative lg:mx-20"> {/*activando el swipe */}
+                    <h2 className="text-4xl font-bold text-center py-2 gradient-gold hover:text-5xl duration-300 ease-in-out pt-10">Nuestras Host: {host[current].hostName}</h2>
                     <div className="grid lg:grid-cols-2 gap-5 py-5 lx:px-40">
                         {/*img container*/}
                         <div className="flex justify-center">
@@ -51,8 +60,8 @@ export default function Host () {
 
                         {/*host info*/}
                         <div className="text-center text-xl px-5">
-                                <p className="text-xl px-5">{host[current].hostText}</p>
-                            <p className="font-bold text-purple-900 italic py-5">&ldquo;{host[current].hostSlogan}&ldquo;</p>
+                                <p className="text-xl px-5 text-white">{host[current].hostText}</p>
+                            <p className="font-bold gradient-pink italic py-5">&ldquo;{host[current].hostSlogan}&ldquo;</p>
                             {/*ig card*/}
                             <a href={host[current].hostIgUrl} target="_blank" rel="noopener noreferrer"className="inline-flex items-center gap-2 bg-gradient-to-r from-yellow-400 via-pink-500 to-purple-600 text-white px-4 py-2 rounded-full shadow-lg hover:scale-105 transform transition duration-300"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" className="w-5 h-5">
                             <path d="M7.75 2A5.75 5.75 0 0 0 2 7.75v8.5A5.75 5.75 0 0 0 7.75 22h8.5A5.75 5.75 0 0 0 22 16.25v-8.5A5.75 5.75 0 0 0 16.25 2h-8.5ZM20.5 7.75v8.5a4.25 4.25 0 0 1-4.25 4.25h-8.5a4.25 4.25 0 0 1-4.25-4.25v-8.5A4.25 4.25 0 0 1 7.75 3.5h8.5A4.25 4.25 0 0 1 20.5 7.75Zm-8.5 1a5.5 5.5 0 1 0 0 11 5.5 5.5 0 0 0 0-11Zm0 1.5a4 4 0 1 1 0 8 4 4 0 0 1 0-8ZM17 7.25a1 1 0 1 0 0 2 1 1 0 0 0 0-2Z" /></svg>{host[current].hostIgTitle}</a>

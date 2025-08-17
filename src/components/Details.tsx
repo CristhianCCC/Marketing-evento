@@ -4,9 +4,9 @@ export default function Details () {
 
     return (
         <>
-            <h2 className="text-4xl font-bold text-center py-5 hover:text-5xl duration-300 ease-in-out text-purple-900">Lo que experimentarás en este evento.</h2>
+            <h2 className="text-4xl font-bold text-center py-5 hover:text-5xl duration-300 ease-in-out gradient-gold">Lo que experimentarás en este evento.</h2>
 
-            <div className="grid lg:grid-cols-2 items-center">
+            <div className="grid lg:grid-cols-2 items-center text-white">
                 <div className="flex justify-center">
                     <ul className="py-5 list-disc list-inside text-left space-y-5 text-xl px-10">
                         <li>Reconectar con tu poder femenino desde la verdad, no desde el sacrificio</li>
