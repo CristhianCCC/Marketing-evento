@@ -31,7 +31,7 @@ export default function About () {
                     <FcCalendar />
                     <h2 className="my-2" >17 de Septiembre</h2>
                     <FcClock className="my-2"/>
-                    <h2 >7:00 p.m. a 8:30 p.m.</h2>
+                    <h2 >7:00 p.m. a 9:00 p.m.</h2>
                 </div>
                 <div className="flex flex-col items-center hover:text-3xl duration-300 ease-in-out">
                         <FaLocationDot className="text-red-600 my-2"/>
@@ -40,7 +40,7 @@ export default function About () {
                 <div>
                     <div className="flex flex-col items-center hover:text-3xl duration-300 ease-in-out">
                         <IoTicketSharp className="text-yellow-700 my-2"/>
-                        <h2 className="text-center">Preventa: <span className="gradient-gold font-bold">$60.000</span> hasta el 5 de Septiembre - Cupos limitados</h2>
+                        <h2 className="text-center">Preventa: <span className="gradient-gold font-bold">$80.000</span> hasta el 5 de Septiembre - Cupos limitados (precio normal <span className="gradient-gold font-bold">$110.000</span>)</h2>
                     </div>
                 </div>
             </div>

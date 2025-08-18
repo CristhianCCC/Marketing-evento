@@ -2,12 +2,14 @@ import { useState } from "react";
 import { useSwipeable } from "react-swipeable";
 import hostimg1 from "../img/host.jpg";
 import hostimg2 from "../img/host2.jpg";
-import hostimg3 from "../img/host3.jpg";
+import hostimg3 from "../img/host3.png";
 
 const host = [
     {
     hostName: "Monica Bustamante",
-    hostText: "Coach, conferencista y mujer real. He acompañado a miles de mujeres, hombres, deportistas y empresarios a recordar quiénes son, a reconectarse con su poder interior y a liderar sus vidas desde el amor propio. Reconocimientos: 2 Guinness World Records, Experta en neurociencia y gerencia estratégica, Fundadora de programas de transformación emocional y mentalidad",
+    hostText: `Coach, conferencista y mujer real. 
+    He acompañado a miles de mujeres, hombres, deportistas y empresarios a recordar quiénes son, a reconectarse con su poder interior y a liderar sus vidas desde el amor propio. 
+    Reconocimientos: 2 Guinness World Records, Experta en neurociencia y gerencia estratégica, Fundadora de programas de transformación emocional y mentalidad.`,
     hostSlogan: "El verdadero éxito nace cuando conectas con tu esencia y eliges escuchar tu corazón.",
     hostIgUrl: "https://www.instagram.com/monica_bustamante_coach?igsh=cGxpbGQ2YzU3cGo4",
     hostIgTitle: "@monica_bustamante_coach",
@@ -15,7 +17,9 @@ const host = [
     },
     {
     hostName: "Diana Escobar",
-    hostText: "Experta en Ventas y Atención al Cliente Con más de 12 años de experiencia en el mundo comercial, ayudo a equipos y negocios a vender más y vender mejor, aplicando técnicas de cierre efectivas y estrategias de fidelización de clientes. He capacitado a decenas de profesionales para que conviertan cada interacción en una oportunidad de negocio, logrando incrementos sostenidos en ventas y una conexión auténtica con sus clientes. Mi enfoque combina habilidades prácticas, mentalidad ganadora y un método probado para llevar tus resultados al siguiente nivel.",
+    hostText: `Soy la Dra. Diana Escobar, odontóloga y estratega en ventas. 
+    Transformé mi consultorio aplicando técnicas de cierre y servicio al cliente que hoy me permiten no solo crecer, sino enseñar a otros profesionales cómo lograrlo. 
+    En nuestro evento presencial compartiré las mismas estrategias que cambiaron mi historia, para que tú también aprendas a llenar tu agenda, cerrar más ventas y construir un consultorio rentable y estable.`,
     hostSlogan: "Vender no es convencer, es conectar y generar confianza.",
     hostIgUrl: "https://www.instagram.com/diana.fernanda2/?igsh=MW8weG83dnUwNm84NA%3D%3D&utm_source=qr#",
     hostIgTitle: "@diana.fernanda2",
@@ -23,7 +27,10 @@ const host = [
     },
     {
     hostName: "Fernanda Caicedo",
-    hostText: "Estratega de Marketing, Negocios y Desarrolladora Publicitaria, Ayudo a emprendedores y empresarios a pasar de su punto de partida a convertirse en negocios altamente rentables, integrando marketing digital, capacitación y estrategias a la medida. Con formación en Desarrollo Publicitario y mentorías de líderes como Álvaro Luque, Juan Ads, John Maxwell y Brian Tracy, combino visión estratégica, creatividad y enfoque en resultados reales para transformar marcas en verdaderas historias de éxito.",
+    hostText: `Soy Fernanda Caicedo, estratega en marketing y negocios, apasionada por descubrir cómo las empresas pueden crecer cuando combinan creatividad, estrategia y herramientas modernas como la inteligencia artificial. 
+    A lo largo de mi experiencia, he tenido la oportunidad de acompañar a negocios en su transformación, como el Consultorio Odontológico de la Dra. Diana Escobar, donde implementamos estrategias que no solo aumentaron la visibilidad, sino que también mejoraron la forma en que se conectaban con sus pacientes, logrando resultados medibles y reales. 
+    Mi propósito es claro: mostrar que la inteligencia artificial no es algo lejano ni complicado, sino una aliada práctica que puede ayudar a cualquier negocio a organizarse mejor, comunicarse de manera más efectiva y abrir nuevas oportunidades de crecimiento. 
+    En esta conferencia compartiré de forma sencilla y aplicable cómo integrar el marketing con la tecnología, para que tu empresa pueda dar pasos firmes hacia un futuro más rentable y competitivo.`,
     hostSlogan: "No apuesto a la suerte, apuesto a la estrategia que convierte sueños en resultados.",
     hostIgUrl: "https://www.instagram.com/diana.fernanda2/?igsh=MW8weG83dnUwNm84NA%3D%3D&utm_source=qr#",
     hostIgTitle: "@diana.fernanda2",
@@ -60,7 +67,12 @@ export default function Host () {
 
                         {/*host info*/}
                         <div className="text-center text-xl px-5">
-                                <p className="text-xl px-5 text-white">{host[current].hostText}</p>
+                                 {host[current].hostText
+                                    .split(/\n+/) 
+                                    .filter((p) => p.trim() !== "")
+                                    .map((paragraph, index) => (
+                                    <p key={index} className="leading-relaxed text-xl px-5 text-white">{paragraph.trim()}</p>
+                                ))}
                             <p className="font-bold gradient-pink italic py-5">&ldquo;{host[current].hostSlogan}&ldquo;</p>
                             {/*ig card*/}
                             <a href={host[current].hostIgUrl} target="_blank" rel="noopener noreferrer"className="inline-flex items-center gap-2 bg-gradient-to-r from-yellow-400 via-pink-500 to-purple-600 text-white px-4 py-2 rounded-full shadow-lg hover:scale-105 transform transition duration-300"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" className="w-5 h-5">

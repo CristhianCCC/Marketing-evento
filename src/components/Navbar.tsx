@@ -22,6 +22,7 @@ export default function Navbar () {
                 <a href = "#about" className="smooth hover:text-xl duration-300 ease-in-out">Acerca Del Evento</a>
                 <a href = "#host" className="smooth hover:text-xl duration-300 ease-in-out">Host</a>
                 <a href = "#testimonials" className="smooth hover:text-xl duration-300 ease-in-out">Testimoniales</a>
+                <a href = "#bonus" className="smooth hover:text-xl duration-300 ease-in-out">Bonos</a>
                 <a href = "#tickets" className="smooth hover:text-xl duration-300 ease-in-out">Entradas</a>
             </ul>
         </nav>

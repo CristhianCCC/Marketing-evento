@@ -7,6 +7,7 @@ import Host from './components/Host';
 import Testimonials from './components/Testimonials';
 import Ticket from './components/Ticket';
 import Footer from './components/Footer';
+import Bonus from './components/Bonus';
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
       <Details/>
       <Host/>
       <Testimonials/>
+      <Bonus/>
       <Ticket/>
       <Footer/>
     </>
