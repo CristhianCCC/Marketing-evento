@@ -1,4 +1,3 @@
-import details1 from "../img/details1.jpg"
 import { CheckCircle } from "lucide-react"
 import { motion } from "framer-motion"
 
@@ -17,7 +16,7 @@ export default function Details() {
                 Lo que experimentarás en este evento
             </motion.h2>
 
-            <div className="grid lg:grid-cols-2 items-center text-white">
+            <div className="flex justify-center items-center text-white">
                 {/* Lista animada  */} 
                  <motion.div 
                     className="flex justify-center"
@@ -45,22 +44,7 @@ export default function Details() {
                             </li>
                         ))}
                     </ul>
-                 </motion.div>
-
-                {/* Imagen animada */} 
-                <motion.div 
-                    className="flex justify-center "
-                    initial={{ opacity: 0, x: 50 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 0.8 }}
-                >
-                    <img 
-                        className="rounded-2xl max-w-md object-contain w-50
-                                   shadow-lg hover:scale-105 transition duration-500" 
-                        src={details1} 
-                        alt="Detalles del evento" 
-                    />
-                </motion.div>
+                 </motion.div>                
             </div>
         </>
     )

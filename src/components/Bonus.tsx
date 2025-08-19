@@ -27,7 +27,7 @@ export default function Bonus() {
           <div className="bg-gray-800 rounded-2xl shadow-lg p-6 hover:scale-105 transition">
             <h4 className="text-2xl font-bold mb-3">🚀 Bono #1</h4>
             <p className="text-lg leading-relaxed">
-              Acceso a un <span className="font-bold">Zoom privado</span> con{" "}
+              Acceso a un <span className="font-bold">Zoom grupal</span> con{" "}
               <span className="text-pink-400">Mónica Bustamante</span>, coach en mentalidad e inteligencia emocional. 
               Transforma tu forma de pensar, rompe bloqueos y acelera tu crecimiento personal.
             </p>
