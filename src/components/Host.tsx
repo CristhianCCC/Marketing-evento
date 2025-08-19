@@ -3,6 +3,7 @@ import { useSwipeable } from "react-swipeable";
 import hostimg1 from "../img/host.jpg";
 import hostimg2 from "../img/host2.jpg";
 import hostimg3 from "../img/host3.png";
+import { motion } from "framer-motion";
 
 const host = [
     {
@@ -27,10 +28,10 @@ const host = [
     },
     {
     hostName: "Fernanda Caicedo",
-    hostText: `Soy Fernanda Caicedo, estratega en marketing y negocios, apasionada por descubrir cómo las empresas pueden crecer cuando combinan creatividad, estrategia y herramientas modernas como la inteligencia artificial. 
-    A lo largo de mi experiencia, he tenido la oportunidad de acompañar a negocios en su transformación, como el Consultorio Odontológico de la Dra. Diana Escobar, donde implementamos estrategias que no solo aumentaron la visibilidad, sino que también mejoraron la forma en que se conectaban con sus pacientes, logrando resultados medibles y reales. 
-    Mi propósito es claro: mostrar que la inteligencia artificial no es algo lejano ni complicado, sino una aliada práctica que puede ayudar a cualquier negocio a organizarse mejor, comunicarse de manera más efectiva y abrir nuevas oportunidades de crecimiento. 
-    En esta conferencia compartiré de forma sencilla y aplicable cómo integrar el marketing con la tecnología, para que tu empresa pueda dar pasos firmes hacia un futuro más rentable y competitivo.`,
+    hostText: `Soy Fernanda Caicedo, estratega en marketing y negocios. Mi pasión es ayudar a las empresas a crecer uniendo creatividad, estrategia y herramientas modernas como la inteligencia artificial.
+    He acompañado negocios en su transformación, como el Consultorio Odontológico de la Dra. Diana Escobar, donde logramos mayor visibilidad y una conexión más efectiva con sus pacientes, obteniendo resultados reales.
+    Mi propósito es mostrar que la IA no es lejana ni complicada, sino una aliada práctica para organizarse, comunicarse mejor y abrir nuevas oportunidades de crecimiento.
+    En esta conferencia compartiré de forma clara cómo integrar marketing y tecnología para que tu empresa avance hacia un futuro más rentable y competitivo.`,
     hostSlogan: "No apuesto a la suerte, apuesto a la estrategia que convierte sueños en resultados.",
     hostIgUrl: "https://www.instagram.com/diana.fernanda2/?igsh=MW8weG83dnUwNm84NA%3D%3D&utm_source=qr#",
     hostIgTitle: "@diana.fernanda2",
@@ -58,6 +59,13 @@ export default function Host () {
         <>
         <section id = "host">
             <div {...handlers} className="relative lg:mx-20"> {/*activando el swipe */}
+                <motion.div
+                key={current} 
+                initial={{ opacity: 0, x: 100 }}
+                animate={{ opacity: 1, x: 0 }}
+                exit={{ opacity: 0, x: -100 }}
+                transition={{ duration: 0.5 }}
+                className=" p-6 rounded-xl shadow-lg text-center">
                     <h2 className="text-4xl font-bold text-center py-2 gradient-gold hover:text-5xl duration-300 ease-in-out pt-10">Nuestras Host: {host[current].hostName}</h2>
                     <div className="grid lg:grid-cols-2 gap-5 py-5 lx:px-40">
                         {/*img container*/}
@@ -87,6 +95,7 @@ export default function Host () {
                     <button onClick={next} className="absolute right-0 top-1/2 -translate-y-1/2 bg-purple-600 text-white p-2 rounded-full hover:bg-purple-700 transition">
                     ›
                     </button>
+                </motion.div>
                 </div>
             </section>
         </>

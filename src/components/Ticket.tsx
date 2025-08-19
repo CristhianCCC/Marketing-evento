@@ -1,7 +1,7 @@
 
 export default function Ticket() {
   return (
-    <section id="tickets" className="py-12 px-4">
+    <section id="tickets" className="py-12 px-4 bg-gradient-to-b from-gray-900 via-black to-gray-900">
       {/* Título */}
       <h2 className="text-3xl sm:text-4xl font-bold text-center gradient-gold hover:text-5xl duration-300 ease-in-out">
         Tú no estás aquí por suerte. Estás aquí porque estás lista.

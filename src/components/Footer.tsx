@@ -2,14 +2,14 @@ import { RiInstagramFill, RiWhatsappFill, RiMailFill, RiMapPin2Fill } from "reac
 
 export default function Footer() {
   return (
-    <footer className="pink text-white">
+    <footer className=" text-gray-900 bg-gradient-to-b from-gray-100 via-gray-300 to-gray-100 shadow-2xl">
       <div className="max-w-7xl mx-auto px-6 py-10 grid gap-8 md:grid-cols-3">
         
         {/* Sección 1: Sobre el evento */}
         <div>
           <h3 className="text-xl font-semibold mb-3">Conferencia Mónica Bustamante, Diana Escobar y Fernanda Caicedo</h3>
-          <p className="text-sm text-gray-300 leading-relaxed">
-            Un espacio para reconectar contigo misma, despertar tu poder interior y liderar tu vida y tu negocio con amor propio, estrategias de marketing y ventas auténticas.
+          <p className="text-sm text-gray-600 leading-relaxed">
+            Un espacio para reconectar contigo mismo, despertar tu poder interior y liderar tu vida y tu negocio con amor propio, estrategias de marketing y ventas auténticas.
           </p>
         </div>
 
@@ -23,7 +23,7 @@ export default function Footer() {
             </li>
             <li className="flex items-center gap-2">
               <RiMailFill className="text-yellow-300" />
-              contacto@monicabustamante.com
+              Dfnegociosrentables@gmail.com
             </li>
             <li className="flex items-center gap-2">
               <RiWhatsappFill className="text-yellow-300" />
@@ -68,7 +68,7 @@ export default function Footer() {
       </div>
 
       {/* Línea inferior */}
-      <div className="bg-pink text-center py-4 text-sm text-gray-300">
+      <div className="bg-pink text-center py-4 text-sm text-gray-600">
         © {new Date().getFullYear()} - 2025 Conferencia Mónica Bustamante, Diana Escobar y Fernanda Caicedo — Todos los derechos reservados.
       </div>
     </footer>
