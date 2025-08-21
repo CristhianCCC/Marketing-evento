@@ -17,7 +17,7 @@ export default function Navbar () {
                             )}
                         </svg>
             </button>
-            <ul className={`rounded-2xl p-5 flex lg:justify-evenly text-center justify-between items-center bg-gray-900 shadow-2xl gradient-pink font-bold overflow-hidden duration-300 ease-out ${menuOpen ? 'flex-col-reverse max-h-96 opacity-100' : 'max-h-0 opacity-0'} lg:max-h-none lg:opacity-100`}>
+            <ul className={`rounded-2xl p-5 flex lg:justify-evenly text-center justify-between items-center bg-gray-900 shadow-2xl gradient-gold font-bold overflow-hidden duration-300 ease-out ${menuOpen ? 'flex-col-reverse max-h-96 opacity-100' : 'max-h-0 opacity-0'} lg:max-h-none lg:opacity-100`}>
                 <a href = "#hero" className="smooth hover:text-xl duration-300 ease-in-out">Inicio</a>
                 <a href = "#about" className="smooth hover:text-xl duration-300 ease-in-out">Acerca Del Evento</a>
                 <a href = "#host" className="smooth hover:text-xl duration-300 ease-in-out">Host</a>

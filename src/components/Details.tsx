@@ -6,7 +6,7 @@ export default function Details() {
         <>
              <motion.h2 
                 className="text-4xl font-extrabold text-center py-5 
-                           bg-gradient-to-r from-pink-400 via-pink-500 to-pink-600 
+                           gradient-gold
                            bg-clip-text text-transparent 
                            animate-pulse"
                 initial={{ opacity: 0, y: -30 }}
@@ -37,9 +37,9 @@ export default function Details() {
                         ].map((item, i) => (
                             <li 
                                 key={i} 
-                                className="flex items-start gap-3 hover:text-pink-400 transition duration-300"
+                                className="flex items-start gap-3 hover:text-blue-400 transition duration-300"
                             >
-                                <CheckCircle className="text-pink-500 mt-1 w-6 h-6" />
+                                <CheckCircle className="text-blue400 mt-1 w-6 h-6" />
                                 <span>{item}</span>
                             </li>
                         ))}

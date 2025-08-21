@@ -11,7 +11,7 @@ export default function Bonus() {
           Si el <span className="font-bold">17 de septiembre</span> este evento no te mueve, no te inspira y no transforma la manera en la que ves tu vida y tu negocio…
         </p>
         <p className="text-xl leading-relaxed mb-4">
-          <span className="font-bold text-pink-400">te devolvemos el 100% de tu dinero.</span>
+          <span className="font-bold gradient-gold">te devolvemos el 100% de tu dinero.</span>
         </p>
         <p className="italic text-lg mb-2">👉 Porque no quiero que vengas con miedo a perder, quiero que vengas con la certeza de ganar.</p>
         <p className="text-lg font-semibold text-emerald-400">Aquí el único riesgo es no estar presente.</p>
@@ -19,7 +19,7 @@ export default function Bonus() {
 
       {/* Bonos */}
       <div className="max-w-5xl mx-auto">
-        <h3 className="text-3xl md:text-4xl font-bold text-center gradient-pink mb-10">🎁 Bonos Exclusivos</h3>
+        <h3 className="text-3xl md:text-4xl font-bold text-center gradient-gold mb-10">🎁 Bonos Exclusivos</h3>
         <p className="text-center text-lg text-gray-300 mb-8">¡Solo para las primeras <span className="font-bold text-yellow-400">15 personas</span> en tomar acción!</p>
 
         <div className="grid md:grid-cols-2 gap-10">
@@ -56,7 +56,7 @@ export default function Bonus() {
         <div className="mt-12 text-center">
           <p className="text-lg text-gray-300 mb-4">
             ✨ Y si te quedas por fuera de esas 15 personas… no te preocupes, porque igual formarás parte de nuestra{" "}
-            <span className="font-bold text-pink-400">comunidad privada</span>, donde seguiremos compartiendo valor y acompañándote en tu proceso de transformación.
+            <span className="font-bold bg-gradient-to-br from-emerald-300 to-emerald-600 bg-clip-text text-transparent">comunidad privada</span>, donde seguiremos compartiendo valor y acompañándote en tu proceso de transformación.
           </p>
           <p className="text-2xl font-bold text-yellow-400 animate-pulse">
             ⚡ Decide rápido y asegura tu lugar
@@ -65,9 +65,9 @@ export default function Bonus() {
 
         {/* Información de ticket */}
       <div className="mt-10 text-center">
-        <h3 className="text-2xl gradient-pink font-bold">Reserva ya tu entrada.</h3>
+        <h3 className="text-2xl bg-gradient-to-br from-emerald-300 to-emerald-600 bg-clip-text text-transparent font-bold">Reserva ya tu entrada.</h3>
         <p className="text-xl gradient-gold font-bold">
-          $80.000 <span className="text-xl gradient-pink">(Preventa hasta el 5 de septiembre)</span>
+          $80.000 <span className="text-xl bg-gradient-to-br from-emerald-300 to-emerald-600 bg-clip-text text-transparent">(Preventa hasta el 5 de septiembre)</span>
         </p>
       </div>
 
