@@ -88,11 +88,11 @@ export default function Host () {
                         </div>
                     </div>
                     {/*flechas*/}
-                    <button onClick={prev} className="absolute left-0 top-1/2 -translate-y-1/2 bg-purple-600 text-white p-2 rounded-full hover:bg-purple-700 transition"> 
+                    <button onClick={prev} className="absolute left-0 top-1/2 -translate-y-1/2 bg-gradient-to-br from-emerald-300 to-emerald-600 text-white p-2 rounded-full hover:bg-purple-700 transition"> 
                             ‹
                         </button>
                     
-                    <button onClick={next} className="absolute right-0 top-1/2 -translate-y-1/2 bg-purple-600 text-white p-2 rounded-full hover:bg-purple-700 transition">
+                    <button onClick={next} className="absolute right-0 top-1/2 -translate-y-1/2 bg-gradient-to-br from-emerald-300 to-emerald-600 text-white p-2 rounded-full hover:bg-purple-700 transition">
                     ›
                     </button>
                 </motion.div>

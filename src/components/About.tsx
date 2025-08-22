@@ -40,7 +40,7 @@ export default function About () {
                 <div>
                     <div className="flex flex-col items-center hover:text-3xl duration-300 ease-in-out">
                         <IoTicketSharp className="text-yellow-700 my-2"/>
-                        <h2 className="text-center">Preventa: <span className="gradient-gold font-bold">$80.000</span> hasta el 5 de Septiembre - Cupos limitados (precio normal <span className="gradient-gold font-bold">$110.000</span>)</h2>
+                        <h2 className="text-center">Preventa: <span className="gradient-gold font-bold">$90.000</span> hasta el 5 de Septiembre - Cupos limitados (precio normal <span className="gradient-gold font-bold">$130.000</span>)</h2>
                     </div>
                 </div>
             </div>

@@ -67,7 +67,7 @@ export default function Bonus() {
       <div className="mt-10 text-center">
         <h3 className="text-2xl bg-gradient-to-br from-emerald-300 to-emerald-600 bg-clip-text text-transparent font-bold">Reserva ya tu entrada.</h3>
         <p className="text-xl gradient-gold font-bold">
-          $80.000 <span className="text-xl bg-gradient-to-br from-emerald-300 to-emerald-600 bg-clip-text text-transparent">(Preventa hasta el 5 de septiembre)</span>
+          $90.000 <span className="text-xl bg-gradient-to-br from-emerald-300 to-emerald-600 bg-clip-text text-transparent">(Preventa hasta el 5 de septiembre) <br /> precio normal <span className="text-xl gradient-gold font-bold"> $130.000</span></span>
         </p>
       </div>
 
